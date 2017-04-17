@@ -3,8 +3,8 @@
 namespace Game\Data;
 
 class WordBank
-{
-	private $words = ['FRODO', 'GANDALF', 'LEGOLAS', 'ARAGORN', 'SAURON', 'SARUMAN', 'ELFO', 'VALFENDA', 'SAM', 'CONDADO', 'ANÃO', 'HOBBIT', 'GOLUM'];
+{	
+	private $words = ['BALEIA', 'BOLA', 'BOCA', 'CARRO', 'CASA', 'FILTRO'];
 
 	public function getRandom()
 	{

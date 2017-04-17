@@ -6,6 +6,6 @@ class MechanicsFactory
 {
 	public function get()
 	{
-		return new SuddenDeath();
+		return new FiveEndlessAttemptsOfWords();
 	}
 }
