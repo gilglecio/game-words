@@ -1,6 +1,6 @@
 Execute to game start `php run.php`.
 
-`
+```
 ::::: Bem Vindo ao PALAVRAS DIVERTIDAS :::::
 
 Você vai jogar no modo: MORTE SÚBITA
@@ -22,4 +22,4 @@ Adivinhe qual a palavra: NORUAS -> oruas
 Errou feio!!!
 
 Você conseguiu acertar 4 palavras
-`
+```
