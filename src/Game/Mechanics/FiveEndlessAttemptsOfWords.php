@@ -28,16 +28,28 @@ class FiveEndlessAttemptsOfWords implements MechanicsOfTheGameInterface
 	public function attempt($word, $input)
 	{
 		if ($word == $input) {
-			$this->points += 100;
+			$this->up();
 			$this->current_word = $this->word_bank->getRandom();
 			$this->number_of_words_played++;
-			
+
 			return 'Acertou| Você ganhou 100 pontos';
 		}
 
-		$this->points -= 50;
+		$this->down();
 
 		return 'Não deu. Perdeu 50 pontos... Tente de novo!';
+	}
+
+	private function up()
+	{
+		$this->points += 100;
+	}
+
+	private function down()
+	{
+		if ($this->points > 0) {
+			$this->points -= 50;
+		}
 	}
 
 	public function gameOver()
